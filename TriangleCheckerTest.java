@@ -118,6 +118,22 @@ public class TriangleCheckerTest {
 
     a = 2;
     b = 2;
+    c = 3;
+    type = TriangleChecker.checkTriangle(a, b, c);
+
+    // Assert
+    assertEquals( TriangleChecker.TriangleType.ISOSCELES, type);
+
+    a = 2;
+    b = 3;
+    c = 2;
+    type = TriangleChecker.checkTriangle(a, b, c);
+
+    // Assert
+    assertEquals( TriangleChecker.TriangleType.ISOSCELES, type);
+
+    a = 3;
+    b = 2;
     c = 2;
     type = TriangleChecker.checkTriangle(a, b, c);
 

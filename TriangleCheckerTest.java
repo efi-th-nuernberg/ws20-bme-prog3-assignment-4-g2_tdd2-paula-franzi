@@ -116,6 +116,14 @@ public class TriangleCheckerTest {
     // Assert
     assertEquals(TriangleChecker.TriangleType.ISOSCELES, type);
 
+    a = 2;
+    b = 2;
+    c = 2;
+    type = TriangleChecker.checkTriangle(a, b, c);
+
+    // Assert
+    assertEquals( TriangleChecker.TriangleType.ISOSCELES, type);
+
   }
 
 }

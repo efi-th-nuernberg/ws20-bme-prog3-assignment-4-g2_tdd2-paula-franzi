@@ -59,7 +59,7 @@ public class TriangleChecker {
       return TriangleType.EQUILATERAL;
     }
 
-    if ((a == b || a == c) && (b != c)) {
+    if ((a == b || a == c) && ((b != c)|| (b == c))) {
       return TriangleType.ISOSCELES;
     }
 
